@@ -1,0 +1,14 @@
+[package]
+name = "saddle-world-lighting-example-street-lights"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+bevy = { workspace = true }
+saddle-world-time = { workspace = true }
+saddle-world-lighting = { workspace = true }
+saddle-world-lighting-example-support = { path = "../support" }
+
+[lints]
+workspace = true

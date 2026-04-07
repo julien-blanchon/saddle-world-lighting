@@ -1,0 +1,26 @@
+[workspace]
+members = [
+    "support",
+    "basic",
+    "full_cycle",
+    "latitude",
+    "fixed_time",
+    "street_lights",
+    "lab",
+]
+resolver = "3"
+
+[workspace.dependencies]
+bevy = { version = "0.18", features = ["webgpu"] }
+bevy_flair = "0.7"
+bevy_input_focus = "0.18"
+bevy_ui_widgets = "0.18"
+saddle-world-time = { git = "https://github.com/julien-blanchon/saddle-world-time" }
+saddle-world-lighting = { path = ".." }
+saddle-pane = { git = "https://github.com/julien-blanchon/saddle-pane" }
+
+[workspace.lints.clippy]
+too_many_arguments = "allow"
+type_complexity = "allow"
+nonstandard_macro_braces = "warn"
+collapsible_if = "allow"

@@ -1,0 +1,20 @@
+[package]
+name = "saddle-world-lighting"
+version = "0.1.0"
+edition = "2024"
+publish = false
+repository = "https://github.com/julien-blanchon/saddle-world-lighting"
+license = "MIT-0"
+description = "Celestial mechanics, lighting profiles, and managed sun/moon lights for Bevy day-night cycles"
+
+[dependencies]
+bevy = { version = "0.18", features = ["webgpu"] }
+saddle-world-time = { git = "https://github.com/julien-blanchon/saddle-world-time" }
+
+[workspace]
+
+[lints.clippy]
+too_many_arguments = "allow"
+type_complexity = "allow"
+nonstandard_macro_braces = "warn"
+collapsible_if = "allow"
