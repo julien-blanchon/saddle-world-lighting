@@ -21,9 +21,7 @@ pub use lighting::{
 };
 
 // Re-export key types from saddle_world_time for convenience
-pub use saddle_world_time::{
-    DayPhase, DayPhaseBoundaries, TimeOfDay, TimeStep, TimeStepMode,
-};
+pub use saddle_world_time::{DayPhase, DayPhaseBoundaries, TimeOfDay, TimeStep, TimeStepMode};
 
 use bevy::{
     app::PostStartup,

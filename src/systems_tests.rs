@@ -19,10 +19,7 @@ fn plugin_builds_and_initializes_resources() {
             .contains_resource::<saddle_world_time::TimeOfDay>()
     );
     assert!(app.world().contains_resource::<crate::CelestialState>());
-    assert!(
-        app.world()
-            .contains_resource::<crate::DayNightLighting>()
-    );
+    assert!(app.world().contains_resource::<crate::DayNightLighting>());
     assert!(
         app.world()
             .contains_resource::<crate::DayNightDiagnostics>()
